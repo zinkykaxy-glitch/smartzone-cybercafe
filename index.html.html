@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SmartZone Cyber Café</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f4f4f4; }
+    header { background: #0077b6; color: white; padding: 40px 20px; text-align: center; animation: headerFade 2s ease-in-out; }
+    @keyframes headerFade { from { opacity: 0; transform: translateY(-30px);} to { opacity: 1; transform: translateY(0);} }
+    nav { background: #023e8a; text-align: center; padding: 12px 0; }
+    nav a { color: white; text-decoration: none; margin: 0 20px; font-size: 18px; }
+    .main { padding: 30px; }
+    .images-row img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      margin: 10px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    .images-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .service-card {
+      background: white; padding: 20px; margin: 20px 0; border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); animation: cardPop 0.6s ease;
+    }
+    @keyframes cardPop { from { opacity: 0; transform: scale(0.9);} to { opacity: 1; transform: scale(1);} }
+    footer { background: #0077b6; color: white; text-align: center; padding: 15px; }
+    .contact-section { background: white; padding: 20px; margin: 30px 0; border-radius: 8px; }
+    .whatsapp-button {
+      position: fixed; bottom: 20px; right: 20px;
+      background-color: #25d366; color: white;
+      padding: 12px 20px; border-radius: 50px;
+      text-decoration: none; font-size: 16px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      animation: bounce 2s infinite;
+    }
+    @keyframes bounce { 0%,100% { transform: translateY(0);} 50% { transform: translateY(-8px);} }
+    iframe { border: 0; width: 100%; height: 300px; margin-top: 10px; border-radius: 8px; }
+    .airtime-link {
+      display: inline-block; background: #0077b6; color: white;
+      padding: 12px 25px; border-radius: 5px; text-decoration: none;
+      font-size: 18px;
+      transition: background 0.3s;
+    }
+    .airtime-link:hover { background: #005f87; }
+    h2 { color: #0077b6; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>SmartZone Cyber Café</h1>
+  <p>Fast Internet | Printing | Online Services | Computer Training</p>
+</header>
+
+<nav>
+  <a href="#">Home</a>
+  <a href="#services">Services</a>
+  <a href="#contact">Contact</a>
+  <a href="#airtime">Airtime Selling</a>
+</nav>
+
+<div class="main" id="home">
+  <h2>Welcome to SmartZone Cyber Café</h2>
+  <p>We offer the best internet and computer services in Joska, Nairobi.</p>
+  
+  <h3>Computer Training Packages</h3>
+  <ul>
+    <li>Microsoft Word</li>
+    <li>Microsoft Excel</li>
+    <li>Microsoft PowerPoint</li>
+    <li>Microsoft Access</li>
+    <li>Emailing</li>
+    <li>Keyboarding Skills</li>
+  </ul>
+
+  <h3>Inside Our Cyber Café</h3>
+  <div class="images-row">
+    <img src="https://images.unsplash.com/photo-1580894732444-8f1c0c371e4c?auto=format&fit=crop&w=400&q=80" alt="Browsing in cyber">
+    <img src="https://images.unsplash.com/photo-1593642634371-8b12e02d091c?auto=format&fit=crop&w=400&q=80" alt="People using computers">
+    <img src="https://images.unsplash.com/photo-1527689368864-3a821dbccc34?auto=format&fit=crop&w=400&q=80" alt="Computer lab training">
+    <img src="https://images.unsplash.com/photo-1549921296-3a608c1213d4?auto=format&fit=crop&w=400&q=80" alt="Students on PCs">
+  </div>
+</div>
+
+<div class="main" id="services">
+  <h2>Our Services</h2>
+  <div class="service-card"><h3>Browsing</h3><p>High‑speed internet for browsing, research, and entertainment.</p></div>
+  <div class="service-card"><h3>Printing & Scanning</h3><p>We offer printing (A4, color & B/W) and scanning services.</p></div>
+  <div class="service-card"><h3>Passport Photos</h3><p>Instant high-quality passport-size photos for all official needs.</p></div>
+  <div class="service-card"><h3>Online Services</h3><p>Help with eCitizen, KRA, HELB, NTSA, NEMIS and more.</p></div>
+</div>
+
+<div class="contact-section" id="contact">
+  <h2>Contact & Location</h2>
+  <p><strong>Phone:</strong> 0759 798 711</p>
+  <p><strong>Location:</strong> Joska, Nairobi, Kenya</p>
+
+  <!-- Google Map Embed for Joska -->
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15958.24204601396!2d37.1318803!3d-1.4384156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f9ebf84147e41%3A0xbc3dc3f01e7a9a04!2sJoska!5e0!3m2!1sen!2ske!4v1722079876578" 
+    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+
+<div class="contact-section" id="airtime">
+  <h2>Airtime Selling</h2>
+  <a href="https://wa.me/254759798711?text=Hello,%20I%20want%20to%20buy%20airtime" class="airtime-link">Airtime Selling</a>
+</div>
+
+<a href="https://wa.me/254759798711?text=Hi!%20I%20need%20support%20or%20have%20a%20question" class="whatsapp-button" target="_blank">
+  💬 WhatsApp Support
+</a>
+
+<footer>
+  &copy; 2025 SmartZone Cyber Café — All rights reserved.
+</footer>
+
+</body>
+</html>
